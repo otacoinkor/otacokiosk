@@ -14,6 +14,7 @@ def split_frame(input_df, rows):
 
 
 st.set_page_config(layout="centered")
+st.set_page_config(layout="wide")
 
 connection = pymysql.connect(
     host=config.host,
