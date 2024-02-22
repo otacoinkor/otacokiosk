@@ -32,6 +32,8 @@ print(column_names)
 
 dataset = pd.DataFrame(data, columns=column_names)
 
+st.title("오타코시스템 관리자 페이지")
+
 top_menu = st.columns(3)
 with top_menu[0]:
     sort = st.radio("Sort Data", options=["Yes", "No"], horizontal=1, index=1)
