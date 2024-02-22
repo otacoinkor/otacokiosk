@@ -33,7 +33,7 @@ print(column_names)
 
 dataset = pd.DataFrame(data, columns=column_names)
 
-st.title("OTACOSYS 관리자")
+st.title("OTACOSYS 관리자 페이지")
 
 top_menu = st.columns(3)
 with top_menu[0]:
