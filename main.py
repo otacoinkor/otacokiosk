@@ -12,8 +12,6 @@ def split_frame(input_df, rows):
     datf = [input_df.loc[i: i + rows - 1, :] for i in range(0, len(input_df), rows)]
     return datf
 
-
-st.set_page_config(layout="centered")
 st.set_page_config(layout="wide")
 
 connection = pymysql.connect(
