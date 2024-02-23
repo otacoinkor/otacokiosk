@@ -3,3 +3,4 @@ pymysql~=1.1.0
 pandas~=2.2.0
 numpy~=1.26.4
 pydeck~=0.8.1b0
+altair~=5.2.0
