@@ -15,6 +15,8 @@ def split_frame(input_df, rows):
 
 st.set_page_config(layout="wide")
 
+st.title("요소수 관리자 OTACO")
+
 with st.sidebar:
     st.title('메뉴1')
     st.header('서브1')
@@ -42,7 +44,7 @@ print(column_names)
 
 dataset = pd.DataFrame(data, columns=column_names)
 
-st.title("요소수 관리자 OTACO")
+
 
 with tab1:
     top_menu = st.columns(3)
