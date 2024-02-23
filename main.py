@@ -22,6 +22,10 @@ with st.sidebar:
     st.title('메뉴2')
     st.title('메뉴3')
 
+tab1, tab2, tab3 = st.tabs(['tab1', 'tab2', 'tab3'])
+
+
+
 connection = pymysql.connect(
     host=config.host,
     user=config.user,
