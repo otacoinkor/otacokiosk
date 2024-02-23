@@ -13,20 +13,30 @@ def split_frame(input_df, rows):
     return datf
 
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    layout="wide",
+    page_title="Main")
 
 st.title("요소수 관리자 OTACO")
 
+tab1, tab2, tab3 = st.tabs(['요소수', 'tab2', 'tab3'])
+
 with st.sidebar:
     st.title('판매현황')
+
     st.title('집계정보')
     st.title('기기관리')
     st.title('재고관리')
     st.title('고객관리')
     st.title('환경설정')
 
+    btnSidebar1 = st.sidebar.button('판매현황')
 
-tab1, tab2, tab3 = st.tabs(['요소수', 'tab2', 'tab3'])
+
+
+
+
+
 
 connection = pymysql.connect(
     host=config.host,
