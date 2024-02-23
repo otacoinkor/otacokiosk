@@ -21,21 +21,6 @@ st.title("요소수 관리자 OTACO")
 
 tab1, tab2, tab3 = st.tabs(['요소수', 'tab2', 'tab3'])
 
-with st.sidebar:
-    st.title('판매현황')
-    st.title('집계정보')
-    st.title('기기관리')
-    st.title('재고관리')
-    st.title('고객관리')
-    st.title('환경설정')
-
-
-
-
-
-
-
-
 connection = pymysql.connect(
     host=config.host,
     user=config.user,
@@ -46,11 +31,10 @@ connection = pymysql.connect(
 print('connected')
 
 cursor = connection.cursor()
-
 cursor.execute("Select * from _PickPic_Log_Magok")
 data = cursor.fetchall()
 column_names = [desc[0] for desc in cursor.description]
-print(column_names)
+# print(column_names)
 
 dataset = pd.DataFrame(data, columns=column_names)
 
