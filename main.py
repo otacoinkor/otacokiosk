@@ -15,6 +15,11 @@ def split_frame(input_df, rows):
 
 st.set_page_config(layout="wide")
 
+with st.sidebar:
+    st.title('메뉴1')
+    st.title('메뉴2')
+    st.title('메뉴3')
+
 connection = pymysql.connect(
     host=config.host,
     user=config.user,
