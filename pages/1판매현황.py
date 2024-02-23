@@ -3,7 +3,6 @@ import streamlit as st
 import time
 import numpy as np
 
-st.toast('판매현황')
 
 st.set_page_config(
     layout="wide",
@@ -33,5 +32,7 @@ for i in range(1, 101):
     time.sleep(0.05)
 
 progress_bar.empty()
+
+st.toast('판매현황')
 
 st.button("Re-run")
