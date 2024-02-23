@@ -23,14 +23,12 @@ tab1, tab2, tab3 = st.tabs(['요소수', 'tab2', 'tab3'])
 
 with st.sidebar:
     st.title('판매현황')
-
     st.title('집계정보')
     st.title('기기관리')
     st.title('재고관리')
     st.title('고객관리')
     st.title('환경설정')
 
-    btnSidebar1 = st.sidebar.button('판매현황')
 
 
 
