@@ -18,11 +18,13 @@ st.set_page_config(layout="wide")
 st.title("요소수 관리자 OTACO")
 
 with st.sidebar:
-    st.title('메뉴1')
-    st.header('서브1')
-    st.header('서브2')
-    st.title('메뉴2')
-    st.title('메뉴3')
+    st.title('판매현황')
+    st.title('집계정보')
+    st.title('기기관리')
+    st.title('재고관리')
+    st.title('고객관리')
+    st.title('환경설정')
+
 
 tab1, tab2, tab3 = st.tabs(['요소수', 'tab2', 'tab3'])
 
@@ -44,9 +46,9 @@ print(column_names)
 
 dataset = pd.DataFrame(data, columns=column_names)
 
-
-
 with tab1:
+    st.title('판매현항')
+
     top_menu = st.columns(3)
     with top_menu[0]:
         sort = st.radio("Sort Data", options=["Yes", "No"], horizontal=1, index=1)
