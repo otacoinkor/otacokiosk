@@ -9,7 +9,7 @@ st.set_page_config(
     page_title="Page1")
 
 
-st.sidebar.header("판매현황")
+# st.sidebar.header("판매현황")
 
 st.markdown("# 판매현황")
 st.write(
