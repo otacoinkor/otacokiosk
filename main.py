@@ -42,9 +42,9 @@ print(column_names)
 
 dataset = pd.DataFrame(data, columns=column_names)
 
-with tab1:
-    st.title("요소수 관리자 OTACO")
+st.title("요소수 관리자 OTACO")
 
+with tab1:
     top_menu = st.columns(3)
     with top_menu[0]:
         sort = st.radio("Sort Data", options=["Yes", "No"], horizontal=1, index=1)
