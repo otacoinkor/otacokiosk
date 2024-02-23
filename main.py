@@ -6,6 +6,8 @@ import pandas as pd
 import pymysql
 import config
 
+status = 'loading'
+
 
 @st.cache_data(show_spinner=False)
 def split_frame(input_df, rows):
@@ -93,3 +95,7 @@ with tab1:
         # 변경사항을 데이터베이스에 반영합니다.
         connection.commit()
         st.write("Changes submitted.")
+
+status = 'done'
+if status == 'done':
+    st.toast("완료")
