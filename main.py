@@ -98,4 +98,8 @@ with tab1:
 
 status = 'done'
 if status == 'done':
-    st.sidebar.text('완료')
+    with st.sidebar:
+        st.text("완료")
+
+with st.sidebar:
+    st.page_link('2집계정보')
