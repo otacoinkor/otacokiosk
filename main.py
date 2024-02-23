@@ -102,4 +102,4 @@ if status == 'done':
         st.text("완료")
 
 with st.sidebar:
-    st.page_link('2집계정보')
+    st.page_link("pages/2집계정보.py", label='2집계정보')
