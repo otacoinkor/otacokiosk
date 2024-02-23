@@ -98,4 +98,4 @@ with tab1:
 
 status = 'done'
 if status == 'done':
-    st.toast("완료")
+    st.sidebar.text('완료')
