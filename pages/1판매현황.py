@@ -3,7 +3,7 @@ import streamlit as st
 import time
 import numpy as np
 
-# st.toast('판매현황')
+st.toast('판매현황')
 
 st.set_page_config(
     layout="wide",
