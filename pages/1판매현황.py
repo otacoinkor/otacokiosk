@@ -8,8 +8,8 @@ st.set_page_config(
     layout="wide",
     page_title="Page1")
 
-st.markdown("# Plotting Demo")
-st.sidebar.header("Plotting Demo")
+st.markdown("# 판매현황")
+st.sidebar.header("판매현황")
 st.write(
     """This demo illustrates a combination of plotting and animation with
 Streamlit. We're generating a bunch of random numbers in a loop for around
