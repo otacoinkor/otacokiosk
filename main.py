@@ -19,7 +19,7 @@ st.set_page_config(
     layout="wide",
     page_title="Main")
 
-st.title("요소수 관리자 OTACO")
+st.title("요소수 관리자")
 
 tab1, tab2, tab3 = st.tabs(['요소수', 'tab2', 'tab3'])
 
